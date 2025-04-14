@@ -6,8 +6,8 @@ import messagesEn from '../helpers/localisation/messages-en.json';
 import messagesFrCa from '../helpers/localisation/messages-fr-ca.json';
 import type { Language } from '../helpers/types';
 
-const localeMap: Partial<Record<Language, Record<string, string>>> = {
-  'fr-ca': messagesFrCa,
+export const localeMap: Partial<Record<Language, Record<string, string>>> = {
+  [DEFAULT_LOCALE]: messagesFrCa,
   'en': messagesEn,
 };
 
