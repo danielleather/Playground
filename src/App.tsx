@@ -1,11 +1,11 @@
 import './App.css';
 import '@pigment-css/react/styles.css';
 import { IntlProvider, localeMap } from './context/intl';
-import Header from './components/Header';
 import { Layout } from './components/Layout';
 import { useParams } from 'react-router';
 import { DEFAULT_LOCALE } from './helpers/constants';
 import type { Language } from './helpers/types';
+import Landing from './components/Landing';
 
 function App() {
   const params = useParams();
@@ -14,7 +14,7 @@ function App() {
   return (
     <IntlProvider locale={locale as Language}>
       <Layout>
-        <Header />
+        <Landing />
       </Layout>
     </IntlProvider>
   )
