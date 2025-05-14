@@ -1,7 +1,7 @@
 import { useIntl } from "react-intl";
 import GithubIcon from '../media/icons/github.svg?react';
 import LinkedInIcon from '../media/icons/linkedIn.svg?react';
-import { css } from "@pigment-css/react";
+import { css, styled } from "@pigment-css/react";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const intl = useIntl();
@@ -16,33 +16,36 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     flexDirection: 'row-reverse',
   }));
 
-  // const topNavStyles = css({
-  //   height: '3.5rem',
-  //   display: 'flex',
-  //   backgroundColor: `${bananaMania}`,
-  //   borderBottom: `1px solid ${newOrleans}`,
-  //   position: 'fixed',
-  //   width: '100%',
-  //   flexDirection: 'row-reverse',
-  // });
   const spacerStyles = css({
     height: '3.5rem',
   });
-  // const languageSwitcherStyles = (locale: string) => {
-  //   const displayValue = intl.locale === locale ? 'block' : 'none';
-  //   return css({
-  //     display: displayValue,
-  //   })
-  // }
-  // const languageSwitcherStyles = css(() => {
-  //   const displayValue = intl.locale === locale ? 'block' : 'none';
-  // });
+
+  type LanguageSwitcherProps = {
+    active?: boolean;
+  }
+
+  const LanguageSwitcher = styled('a')<LanguageSwitcherProps>({
+    variants: [
+      {
+        props: { active: true },
+        style: {
+          display: 'block',
+        }
+      },
+      {
+        props: { active: false },
+        style: {
+          display: 'none',
+        }
+      }
+    ]
+  });
 
   return (
     <>
-    <div className={topNavStyles}>
-      <a href="/en" className='asdf'>English</a>
-      <a href="fr-ca" className='asdf'>Français</a>
+    <div className={topNavStyles} >
+      <LanguageSwitcher href="/en" active={intl.locale === 'fr-ca'}>English</LanguageSwitcher>
+      <LanguageSwitcher href="/fr-ca" active={intl.locale === 'en'}>Français</LanguageSwitcher>
       <a href="https://www.linkedin.com/in/daniel-leather-9b417714b/" target="_blank" rel="noreferrer">
         <span className="visually-hidden">{intl.formatMessage({ id: 'topNav.linkedin.ariaLabel' })}</span>
         <LinkedInIcon />

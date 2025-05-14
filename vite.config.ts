@@ -5,12 +5,19 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), pigment({
-    theme: {
-      colors: {
-        'bananaMania': '#fae5b4',
-        'newOrleans': '#f1d597',
+  optimizeDeps: {
+    include: ['prop-types', 'react-is'],
+  },
+  plugins: [
+    react(),
+    pigment({
+      theme: {
+        colors: {
+          'bananaMania': '#fae5b4',
+          'newOrleans': '#f1d597',
+        }
       }
-    }
-  }), svgr()],
+    }),
+    svgr()
+  ],
 })

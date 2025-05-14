@@ -3,7 +3,6 @@ import { css } from "@pigment-css/react";
 // import { useIntl } from "react-intl";
 import Header from "./Header";
 import GithubIcon from '../media/icons/github.svg?react';
-import { ThemeArgs } from "@pigment-css/react";
 
 const Landing = (): JSX.Element => {
   const landingStyles = css(({ theme }: ThemeArgs) => ({
