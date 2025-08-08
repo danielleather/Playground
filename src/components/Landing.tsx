@@ -5,7 +5,7 @@ import Header from "./Header";
 import GithubIcon from '../media/icons/github.svg?react';
 
 const Landing = (): JSX.Element => {
-  const landingStyles = css(({ theme }: ThemeArgs) => ({
+  const landingStyles = css(({ theme }) => ({
     border: `1px solid ${theme.colors.newOrleans}`,
     'svg': {
       display: 'block',
