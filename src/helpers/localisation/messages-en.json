@@ -1,5 +1,6 @@
 {
   "header.title": "Playground: A compilation of technologies that I'm familiar with/interested in",
   "topNav.github.linkDescription": "Visit my github profile",
-  "topNav.github.ariaLabel": "Github profile"
+  "topNav.github.ariaLabel": "Github profile",
+  "subheader.title": "Objectively opinionated (but not too strongly)"
 }
