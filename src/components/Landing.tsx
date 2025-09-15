@@ -26,9 +26,9 @@ const Landing = (): JSX.Element => {
   `;
   
   return (
-    <div className={wrapperStyles + " wrapper"}>
-      <div className={sidebarStyles + " sidebar"} />
-      <div className={landingStyles + " landing"}>
+    <div className={wrapperStyles}>
+      <div className={sidebarStyles} />
+      <div className={landingStyles}>
         <Spacer />
         <Header />
         <Spacer />

@@ -2,5 +2,7 @@
   "header.title": "Playground: Une compilation de technologies que je connais ou qui m'intéressent",
   "topNav.github.linkDescription": "Visitez mon profil Github",
   "topNav.github.ariaLabel": "Profil Github",
+  "topNav.linkedin.linkDescription": "Visitez mon profil Linkedin",
+  "topNav.linkedin.ariaLabel": "Profil Linkedin",
   "subheader.title": "objectivement opiniâtre (mais pas trop)"
 }

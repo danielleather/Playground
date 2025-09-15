@@ -58,7 +58,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <IconPanel>
         <LanguageSwitcher href="/en" active={intl.locale === 'fr-ca'}>English</LanguageSwitcher>
         <LanguageSwitcher href="/fr-ca" active={intl.locale === 'en'}>Français</LanguageSwitcher>
-        <a href="https://www.linkedin.com/in/daniel-leather-9b417714b/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/daniel-leather-9b417714b/" target="_blank" rel="noreferrer" aria-label={intl.formatMessage({ id: 'topNav.linkedin.linkDescription' })}>
           <span className="visually-hidden">{intl.formatMessage({ id: 'topNav.linkedin.ariaLabel' })}</span>
           <LinkedInIcon />
         </a>
