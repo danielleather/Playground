@@ -1,6 +1,5 @@
 import type { JSX } from "react";
 import { css } from "@pigment-css/react";
-// import { useIntl } from "react-intl";
 import Header from "./Header";
 import Spacer from "./Spacer";
 import SubHeader from "./Subheader";
@@ -19,7 +18,6 @@ const Landing = (): JSX.Element => {
   `;
 
   const landingStyles = css`
-    /* border: 1px solid var(--colors-newOrleans); */
     svg {
       display: block;
     }
@@ -33,6 +31,7 @@ const Landing = (): JSX.Element => {
         <Header />
         <Spacer />
         <SubHeader />
+        <Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer />
         <div>
           - Pigment
         </div>

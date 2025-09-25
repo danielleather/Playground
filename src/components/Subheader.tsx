@@ -1,12 +1,15 @@
 import type { JSX } from "react";
 import { css } from "@pigment-css/react";
 import { useIntl } from "react-intl";
+import borderStyles from "../helpers/styling/borders";
 
 const subheaderStyles = css`
     color: #2d2d2d;
     font-size: 2rem;
     font-weight: 500;
-    border-bottom: 1px solid var(--colors-newOrleans);
+    margin:0;
+    position: relative;
+    ${borderStyles}
 `;
 
 const SubHeader = (): JSX.Element => {

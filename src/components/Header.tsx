@@ -1,11 +1,17 @@
 import type { JSX } from "react";
 import { css } from "@pigment-css/react";
 import { useIntl } from "react-intl";
-import { sizeGrid } from "../helpers/responsive";
+import { sizeGrid } from "../helpers/styling/responsive";
+import borderStyles from "../helpers/styling/borders";
 
 const Header = (): JSX.Element => {
   const intl = useIntl();
+
   const headerStyles = css`
+    position: relative;
+    ${borderStyles}
+
+    margin: 0;
     color: #2d2d2d;
     font-size: 3rem;
     line-height: 1;
@@ -18,8 +24,8 @@ const Header = (): JSX.Element => {
       }, 'font-size')
     }
     font-weight: 500;
-    border-bottom: 1px solid var(--colors-newOrleans);
   `;
+
   return (<h1 className={headerStyles}>{intl.formatMessage({ id: 'header.title' })}</h1>);
 };
 

@@ -25,6 +25,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     border-bottom: 1px solid var(--colors-newOrleans);
     position: fixed;
     width: 100%;
+    z-index: 2;
   `;
 
   const spacerStyles = css({
