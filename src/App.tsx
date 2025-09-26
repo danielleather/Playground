@@ -6,16 +6,19 @@ import { useParams } from 'react-router';
 import { DEFAULT_LOCALE } from './helpers/constants';
 import type { Language } from './helpers/types';
 import Landing from './components/Landing';
+import { ContrastProvider } from './context/contrast';
 
 function App() {
   const params = useParams();
-
+  
   const locale = params.locale && params.locale in localeMap ? params.locale : DEFAULT_LOCALE;
   return (
     <IntlProvider locale={locale as Language}>
-      <Layout>
-        <Landing />
-      </Layout>
+      <ContrastProvider>
+        <Layout>
+          <Landing />
+        </Layout>
+      </ContrastProvider>
     </IntlProvider>
   )
 }
