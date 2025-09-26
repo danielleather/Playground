@@ -2,6 +2,7 @@ import { useIntl } from "react-intl";
 import GithubIcon from '../media/icons/github.svg?react';
 import LinkedInIcon from '../media/icons/linkedIn.svg?react';
 import { css, styled } from "@pigment-css/react";
+import { ContrastSwitcher } from "./ContrastSwitcher";
 
 const iconPanelStyles = css`
   display: flex;
@@ -67,6 +68,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           <span className="visually-hidden">{intl.formatMessage({ id: 'topNav.github.ariaLabel' })}</span>
           <GithubIcon />
         </a>
+        <ContrastSwitcher />
       </IconPanel>
     </div>
     <div className={spacerStyles} />
