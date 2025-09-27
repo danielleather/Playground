@@ -2,7 +2,7 @@ const shared = `position: absolute;
   height: 1px;
   width: 200vw;
   left: -100vw;
-  background-color: var(--colors-newOrleans);
+  background-color: var(--colors-primary);
   content: '';
 `;
 

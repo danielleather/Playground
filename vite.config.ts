@@ -15,6 +15,8 @@ export default defineConfig({
         colors: {
           'bananaMania': '#fae5b4',
           'newOrleans': '#f1d597',
+          'jaguar': '#030712',
+          'mineshaft': '#2d2d2d'
         }
       })
     }),

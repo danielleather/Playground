@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 import borderStyles from "../helpers/styling/borders";
 
 const subheaderStyles = css`
-    color: #2d2d2d;
+    color: var(--colors-text);
     font-size: 2rem;
     font-weight: 500;
     margin:0;

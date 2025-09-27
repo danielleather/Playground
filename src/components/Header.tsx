@@ -12,7 +12,7 @@ const Header = (): JSX.Element => {
     ${borderStyles}
 
     margin: 0;
-    color: #2d2d2d;
+    color: var(--colors-text);
     font-size: 3rem;
     line-height: 1;
     ${
@@ -23,6 +23,8 @@ const Header = (): JSX.Element => {
         xl: '6rem',
       }, 'font-size')
     }
+    text-align: left;
+    padding: 0 0.5rem;
     font-weight: 500;
   `;
 

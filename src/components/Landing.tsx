@@ -3,18 +3,22 @@ import { css } from "@pigment-css/react";
 import Header from "./Header";
 import Spacer from "./Spacer";
 import SubHeader from "./Subheader";
+import { sizeGrid } from "../helpers/styling/responsive";
 
 const Landing = (): JSX.Element => {
   const wrapperStyles = css`
     display: grid;
-    grid-template-columns: 40px minmax(0, 96rem) 40px;
+    ${sizeGrid({
+      xs: '0 minmax(0, 96rem) 0',
+      md: '2.375rem minmax(0, 96rem) 2.375rem',
+    }, 'grid-template-columns')}
     justify-content: center;
   `;
 
   const sidebarStyles = css`
-    background-image: repeating-linear-gradient(315deg, transparent, transparent 5px, var(--colors-newOrleans) 5px, var(--colors-newOrleans) 6px);
+    background-image: repeating-linear-gradient(315deg, transparent, transparent 5px, var(--colors-primary) 5px, var(--colors-primary) 6px);
     background-attachment: fixed;
-    border: 1px solid var(--colors-newOrleans);
+    border: 1px solid var(--colors-primary);
   `;
 
   const landingStyles = css`
