@@ -1,32 +1,11 @@
 import type { JSX } from "react";
-import { css } from "@pigment-css/react";
-import Header from "./Header";
-import Spacer from "./Spacer";
-import SubHeader from "./Subheader";
-import { sizeGrid } from "../helpers/styling/responsive";
+import Header from "../Header";
+import Spacer from "../Spacer";
+import SubHeader from "../Subheader";
+import { wrapperStyles, sidebarStyles, landingStyles } from "./styles";
+import { CodePanel } from "../CodePanel";
 
 const Landing = (): JSX.Element => {
-  const wrapperStyles = css`
-    display: grid;
-    ${sizeGrid({
-      xs: '0 minmax(0, 96rem) 0',
-      md: '2.375rem minmax(0, 96rem) 2.375rem',
-    }, 'grid-template-columns')}
-    justify-content: center;
-  `;
-
-  const sidebarStyles = css`
-    background-image: repeating-linear-gradient(315deg, transparent, transparent 5px, var(--colors-primary) 5px, var(--colors-primary) 6px);
-    background-attachment: fixed;
-    border: 1px solid var(--colors-primary);
-  `;
-
-  const landingStyles = css`
-    svg {
-      display: block;
-    }
-  `;
-  
   return (
     <div className={wrapperStyles}>
       <div className={sidebarStyles} />
@@ -35,6 +14,7 @@ const Landing = (): JSX.Element => {
         <Header />
         <Spacer />
         <SubHeader />
+        <CodePanel />
         <Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer />
         <div>
           - Pigment

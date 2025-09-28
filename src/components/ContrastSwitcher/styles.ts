@@ -4,7 +4,7 @@ import type { CSSProperties } from 'react'
 
 export const contrastSwitcherStyles = css`
   button {
-    background-color: var(--colors-primary);
+    background-color: transparent;
     border-radius: 0.25rem;
     padding: 0;
     border-radius: 1rem;

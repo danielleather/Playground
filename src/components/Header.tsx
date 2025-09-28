@@ -13,13 +13,15 @@ const Header = (): JSX.Element => {
 
     margin: 0;
     color: var(--colors-text);
+    font-family: "Inter", sans-serif;
+    letter-spacing: -2px;
     font-size: 3rem;
     line-height: 1;
     ${
       sizeGrid({
         xs: '2.25rem',
         md: '3rem',
-        lg: '4rem',
+        lg: '3.75rem',
         xl: '6rem',
       }, 'font-size')
     }

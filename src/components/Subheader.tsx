@@ -9,6 +9,7 @@ const subheaderStyles = css`
     font-weight: 500;
     margin:0;
     position: relative;
+    text-align: left;
     ${borderStyles}
 `;
 

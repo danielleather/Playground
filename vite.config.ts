@@ -13,8 +13,8 @@ export default defineConfig({
     pigment({
       theme: extendTheme({
         colors: {
-          'bananaMania': '#fae5b4',
-          'newOrleans': '#f1d597',
+          'bananaMania': '#fceecf',
+          'newOrleans': '#f6e3bc',
           'jaguar': '#030712',
           'mineshaft': '#2d2d2d'
         }

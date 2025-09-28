@@ -12,6 +12,10 @@ const router = createBrowserRouter([
     path: "/:locale",
     element: <App />,
   },
+  {
+    path: "/",
+    element: <App />,
+  },
 ]);
 
 createRoot(document.getElementById('root')!).render(
