@@ -1,11 +1,10 @@
-import type { JSX } from "react";
 import Header from "../Header";
 import Spacer from "../Spacer";
 import SubHeader from "../Subheader";
 import { wrapperStyles, sidebarStyles, landingStyles } from "./styles";
-import { CodePanel } from "../CodePanel";
+import { Pigment } from "../Pigment/Pigment";
 
-const Landing = (): JSX.Element => {
+const Landing = () => {
   return (
     <div className={wrapperStyles}>
       <div className={sidebarStyles} />
@@ -14,7 +13,8 @@ const Landing = (): JSX.Element => {
         <Header />
         <Spacer />
         <SubHeader />
-        <CodePanel />
+        <Spacer />
+        <Pigment />
         <Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer /><Spacer />
         <div>
           - Pigment

@@ -6,7 +6,7 @@ export default (contrast: Contrast) => {
     '--colors-background': contrast === Contrast.light ? 'var(--colors-bananaMania)' : 'var(--colors-jaguar)',
     '--colors-primary': contrast === Contrast.light ? 'var(--colors-newOrleans)' : 'color-mix(in oklab, #fff 10%, transparent)',
     '--colors-text': contrast === Contrast.light ? 'var(--colors-mineshaft)' : '#ffffff',
-    'background-color': 'var(--colors-background)',
+    'backgroundColor': 'var(--colors-background)',
     
   } as CSSProperties;
 }
