@@ -34,6 +34,22 @@ const Landing = (): JSX.Element => {
         <div>
           - Biome
         </div>
+        <div>
+          - Playwright
+        </div>
+        <div>
+          - Sentry?
+        </div>
+        <div>
+          - pnpm
+        </div>
+        <div>
+          ~~~~~~~~~~~~~ Backend ~~~~~~~~~~~~~
+        </div>
+        <div>
+          - Mutation testing (stryker)
+          -unit testing (nock) and jest
+        </div>
       </div>
       <div className={sidebarStyles}/>
     </div>
